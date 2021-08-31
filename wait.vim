@@ -2,7 +2,7 @@ let s:interval = 10 " Interval to check conditions (milliseconds)
 
 " condition - condition function
 " a:1 - timeout (milliseconds)
-function script#wait(condition, ...)
+function wait#wait(condition, ...)
 	let l:timeout = get(a:, 1, -1) / 1000.0
 	let l:start = reltime()
 	try
